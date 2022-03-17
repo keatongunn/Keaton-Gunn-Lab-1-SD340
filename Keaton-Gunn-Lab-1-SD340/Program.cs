@@ -1,4 +1,10 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using Keaton_Gunn_Lab_1_SD340.Data;
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddDbContext<Keaton_Gunn_Lab_1_SD340Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Keaton_Gunn_Lab_1_SD340Context")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();

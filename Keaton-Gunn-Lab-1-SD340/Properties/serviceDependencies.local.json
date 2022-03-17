@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "type": "mssql.local",
+      "connectionId": "ConnectionStrings:Keaton_Gunn_Lab_1_SD340Context"
+    }
+  }
+}
